@@ -12,6 +12,8 @@ gem 'bootstrap-sass', '~> 3.1.1'
 
 #CarrierWave for media file uploads
 gem 'carrierwave'
+#Use RMagick to resize images
+gem 'rmagick', '2.13.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
