@@ -23,12 +23,23 @@
 
 <p>
   <%= f.label :password %>
-  <%= f.text_field :password %>
+  <%= f.password_field :password %>
 </p>
 
 <p>
-  <%= f.label :avatar %>
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation %>
+</p>
+
+<img src = "<%=asset_path('avatar_original.jpg')%>">
+
+<p>
+  <%= f.label :avatar, 'Upload a profile picture!' %>
   <%= f.file_field :avatar %>
 </p>
 
+
+<p>
+<%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+</p>
 <% end %>
