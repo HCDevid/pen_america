@@ -11,6 +11,7 @@ module SessionsHelper
     current_user.update_attributes(:remember_token, User.hash(user.new_remember_token))
     cookies.delete(:remember_token)
     self.current_user = nil
+  end
 
   def current_user=(user)
     @current_user = user
