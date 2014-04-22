@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
+  has_many :posts
   before_save {self.email = email.downcase}
   before_create :create_remember_token
 
